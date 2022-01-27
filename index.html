@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Orchestra Audition Signup</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<div class="container">
+		<h1>Orchestra Signup</h1>
+		<form action="/orchestraSignup" method="post">
+			<div class="infoMember">
+				<h2>Personal Information:</h2>
+					<label>Last Name</label>
+					<input type="text" id="lastNameId" name="txtLastName" required>
+					<label>First Name</label>
+					<input type='text' id="firstNameId" name="txtFirstName" required>
+					<label>Email</label>
+					<input type='email' id="emailId" name="email" required>
+					<label>Telephone (format 999-999-9999)</label>
+					<input type='tel' id="phoneId" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			</div>
+			<div class="infoInstrument">
+				<h2>What instrument do you play?</h2>
+				<input type="text" id="instrumentId" name="txtInstrument" required>
+			</div>
+			<div class="infoMusicianLevel">
+				<h2>What musician level are you?</h2>
+				
+				<input type="radio" id="rdoBeginnerId" name="rdoMusicLevel" value="b" required>
+				<label id="rdoBeginnerId">Beginner</label>
+
+				<input type="radio" id="rdoIntermediateId" name="rdoMusicLevel" value="i" required>
+				<label id="rdoIntermediateId">Intermediate</label>
+
+				<input type="radio" id="rdoAdvancedId" name="rdoMusicLevel" value="a" required>
+				<label id="rdoAdvancedId">Advanced</label>
+			</div>
+		
+			<div id="divAdvancedMusician" class="infoAdvancedMusician hide">
+				<div class="checkboxes">
+					<input type="checkbox" id="chkWillAuditionId" name=chkWillAudition value='y' checked>
+					<label for="chkWillAuditionId">I will audition for Nebraska Honor Orchestra</label>
+				</div>
+
+				<div class="checkboxes">
+					<input type="checkbox" id="chkWillSoloId" name=chkWillSolo value='y' checked>
+					<label for="chkWillSoloId">I will perform a solo at the District Music Contest</label>
+				</div>
+
+				<div class="checkboxes">
+					<input type="checkbox" id="chkWillTeachId" name=chkWillTeach value='y' checked>
+					<label for="chkWillTeachId">I will give private lessons</label>
+				</div>
+			</div>
+
+			<div class="infoPrivateLessons">
+				<h2>Would you like private lessons?</h2>
+				<input type="radio" id="rdoPLYesId" name="rdoPrivateLessons" value='y'>
+				<label for="rdoPLYesId">Yes</label>
+
+				<input type="radio" id="rdoPLNoId" name="rdoPrivateLessons" value='n'>
+				<label for="rdoPLNoId">No</label>
+			</div>
+
+			<div id="divPrivateLessonsWhen" class="infoPrivateLessonsWhen hide">
+				<h3>What time of the week works best?</h3>
+
+				<div class="timeOfWeek">
+					<label for="sltWkDayId">Week Day: &nbsp;&nbsp;</label>
+					<select name="sltPLWkDay" id="sltWkDayId">
+						<option value="Mon">Monday</option>
+						<option value="Tues">Tuesday</option>
+						<option value="Weds">Wednesday</option>
+						<option value="Thur">Thursday</option>
+						<option value="Friday">Friday</option>
+					</select>
+				</div>
+				<div class="timeOfWeek">
+					<label for="timePLWkdayId">Time of Day: &nbsp;&nbsp;</label>
+					<input type="time" id="timePLWkdayId">
+				</div>
+			</div>
+			<input type="submit">
+		</form>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "orchestra",
+  "version": "1.0.0",
+  "description": "fictional app for learning web development",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jim-Fuhrman/orchestra.git"
+  },
+  "keywords": [
+    "orchestra",
+    "brass",
+    "woodwinds",
+    "strings",
+    "percussion"
+  ],
+  "author": "Jim Fuhrman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jim-Fuhrman/orchestra/issues"
+  },
+  "homepage": "https://github.com/Jim-Fuhrman/orchestra#readme"
+}

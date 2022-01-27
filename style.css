@@ -1,0 +1,35 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: moccasin;
+	// max-width: 1300px;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+input {
+	margin-bottom: 1rem;
+}
+
+.checkboxes {
+	display: flex;
+	flex-direction: row;
+}
+
+.infoMember, .infoAdvancedMusician,
+.infoPrivateLessonsWhen, .timeOfWeek {
+	display: flex;
+	flex-direction: column;
+}
+
+.timeOfWeek {
+	width: 10rem;
+}
+
+.hide {
+	display: none;
+}
